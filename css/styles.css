@@ -1,0 +1,352 @@
+:root {
+  --primary-text-color: #303030;
+  --secondary-text-color: #555555;
+  --light-text-color: #9da4bd;
+  --light-text-color-alfa-sixty: rgba(157, 164, 189, 0.6);
+  --light-text-color-alfa-fourty: rgba(157, 164, 189, 0.4);
+  --accent-color: #ff6c00;
+  --white-color: #fff;
+  --secondary-background-color: #f7f7f7;
+}
+
+body {
+  background-color: var(--white-color);
+
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.btn {
+  padding: 12px 20px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--white-color);
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  background-color: transparent;
+
+  min-width: 160px;
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* header */
+.header {
+  background-color: gray;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* hero */
+.hero-social {
+  color: inherit;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+}
+
+.hero-social:hover,
+.hero-social:focus {
+  color: var(--accent-color);
+}
+
+.hero-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--light-text-color-alfa-sixty);
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.hero-bottom-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  color: var(--light-text-color);
+}
+
+/* about */
+.about-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.about-bottom-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  color: var(--secondary-text-color);
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  color: var(--secondary-text-color);
+}
+
+.about-btn {
+  color: inherit;
+}
+
+/* price */
+.price-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.price-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.price-item-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  color: var(--light-text-color);
+}
+
+/* benefits */
+.benefits-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+}
+
+.benefits-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.benefits-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.benefits-bottom-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  color: var(--secondary-text-color);
+}
+
+/* masters */
+.masters-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.masters-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.masters-item-title {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+}
+
+.masters-item-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  color: var(--accent-color);
+}
+
+/* gallery */
+.gallery-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* online */
+.online-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+/* contacts */
+.contacts-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  color: var(--light-text-color);
+}
+
+.contacts-link-tel {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  color: var(--light-text-color);
+}
+
+.contacts-link-mail {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  text-decoration-line: underline;
+  color: var(--light-text-color);
+}
+
+.contacts-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.contacts-time {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  color: var(--light-text-color);
+}
+
+/* footer */
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  color: var(--light-text-color);
+}
+
+.footer-social {
+  color: inherit;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+}
+
+.footer-social:hover,
+.footer-social:focus {
+  color: var(--accent-color);
+}
