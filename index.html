@@ -22,8 +22,9 @@
       <div class="container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
-            ><img src="./images/logo.svg" alt="логотип сайта"
-          /></a>
+            ><svg class="logo-img" width="66" height="56">
+              <use href="./images/sprites.svg#icon-Logo"></use></svg
+          ></a>
           <ul class="header-list list">
             <li class="header-item item"><a class="header-link link" href="#about">О нас</a></li>
             <li class="header-item item">
@@ -184,15 +185,26 @@
           <h2 class="masters-title" id="masters">Наши мастера</h2>
           <ul class="masters-list list">
             <li class="masters-item item">
-              <img class="masters-img" src="./images/master1.jpg" alt="стрижка шеи" width="370" />
+              <div class="thumb">
+                <img class="masters-img" src="./images/master1.jpg" alt="стрижка шеи" width="370" />
+                <div class="overlay overlay-first">
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                </div>
+              </div>
+
               <h3 class="masters-item-title">John Smith</h3>
               <p class="masters-item-text">Extreme Barber</p>
               <ul class="masters-item-list social-list list">
                 <li class="social-item item">
                   <a
                     class="social-link link"
-                    href="https://www.instagram.com
-"
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
                   >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-instagram"></use>
@@ -200,7 +212,12 @@
                   </a>
                 </li>
                 <li class="social-item item">
-                  <a class="social-link link" href="https://twitter.com">
+                  <a
+                    class="social-link link"
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-twitter"></use>
                     </svg>
@@ -209,8 +226,9 @@
                 <li class="social-item item">
                   <a
                     class="social-link link"
-                    href="https://www.facebook.com/
-"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
                   >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-facebook"></use>
@@ -218,7 +236,12 @@
                   </a>
                 </li>
                 <li class="social-item item">
-                  <a class="social-link link" href="https://ua.linkedin.com">
+                  <a
+                    class="social-link link"
+                    href="https://ua.linkedin.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-linkedin"></use>
                     </svg>
@@ -228,33 +251,68 @@
             </li>
 
             <li class="masters-item item">
-              <img class="masters-img" src="./images/master2.jpg" alt="стрижка сбоку" width="370" />
+              <div class="thumb">
+                <img
+                  class="masters-img"
+                  src="./images/master2.jpg"
+                  alt="стрижка сбоку"
+                  width="370"
+                />
+                <div class="overlay overlay-second">
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                </div>
+              </div>
+
               <h3 class="masters-item-title">Michele Doe</h3>
               <p class="masters-item-text">Extreme Barber</p>
               <ul class="masters-item-list social-list list">
                 <li class="social-item item">
-                  <a class="social-link link" href="">
+                  <a
+                    class="social-link link"
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item item">
-                  <a class="social-link link" href="">
+                  <a
+                    class="social-link link"
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item item">
-                  <a class="social-link link" href="">
+                  <a
+                    class="social-link link"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item item">
-                  <a class="social-link link" href="">
+                  <a
+                    class="social-link link"
+                    href="https://ua.linkedin.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-linkedin"></use>
                     </svg>
@@ -264,33 +322,62 @@
             </li>
 
             <li class="masters-item item">
-              <img class="masters-img" src="./images/master3.jpg" alt="пробор" width="370" />
+              <div class="thumb">
+                <img class="masters-img" src="./images/master3.jpg" alt="пробор" width="370" />
+                <div class="overlay overlay-third">
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                  <p class="overlay-text">BarberShop</p>
+                </div>
+              </div>
               <h3 class="masters-item-title">Alan Black</h3>
               <p class="masters-item-text">Extreme Barber</p>
               <ul class="masters-item-list social-list list">
                 <li class="social-item item">
-                  <a class="social-link link" href="">
+                  <a
+                    class="social-link link"
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item item">
-                  <a class="social-link link" href="">
+                  <a
+                    class="social-link link"
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item item">
-                  <a class="social-link link" href="">
+                  <a
+                    class="social-link link"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item item">
-                  <a class="social-link link" href="">
+                  <a
+                    class="social-link link"
+                    href="https://ua.linkedin.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
                     <svg class="social-icon">
                       <use href="./images/sprites.svg#icon-linkedin"></use>
                     </svg>
