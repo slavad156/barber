@@ -38,7 +38,7 @@
             </li>
           </ul>
           <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-btn btn" type="button">онлайн-запись</button>
+          <button class="header-btn btn" type="button" data-modal-open>онлайн-запись</button>
         </nav>
       </div>
     </header>
@@ -410,7 +410,22 @@
       </section>
       <section class="section section-contacts">
         <div class="container online-contacts">
-          <h2 class="online-title">Онлайн-запись</h2>
+          <div class="thumb-form">
+            <h2 class="online-title">Онлайн-запись</h2>
+            <form action="#" class="online-form js-speaker-form">
+              <div class="inputs">
+                <input type="text" name="name" placeholder="Имя*" class="online-input" />
+                <input
+                  type="tel"
+                  name="tel"
+                  placeholder="Телефон*"
+                  class="online-input online-input-small"
+                />
+              </div>
+              <textarea name="message" placeholder="сообщение" class="online-text"></textarea>
+              <button class="btn" type="submit">отправить</button>
+            </form>
+          </div>
 
           <div class="contacts-content">
             <h2 class="contacts-title" id="contacts">Контакты</h2>
@@ -467,5 +482,36 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal-text">Онлайн-запись</p>
+        <form action="#" class="modal-form">
+          <input
+            type="text"
+            name="name"
+            placeholder="Имя"
+            class="online-input online-input-modal"
+          />
+          <input
+            type="tel"
+            name="tel"
+            placeholder="Телефон"
+            class="online-input online-input-modal"
+          />
+
+          <textarea
+            name="message"
+            placeholder="сообщение"
+            class="online-text online-text-modal"
+          ></textarea>
+          <button class="btn modal-btn" type="submit">отправить</button>
+        </form>
+        <button type="button" class="btn-close" data-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./js/form.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
