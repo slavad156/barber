@@ -138,6 +138,17 @@ h2 {
   margin-right: 70px;
 
   z-index: 1;
+
+  animation-name: logo-animation;
+  animation-duration: 3200ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.logo:hover,
+.logo:focus {
+  animation-play-state: paused;
 }
 
 .logo-img {
@@ -817,4 +828,15 @@ h2 {
 .footer-social:hover,
 .footer-social:focus {
   color: var(--accent-color);
+}
+
+/* animation for logo */
+@keyframes logo-animation {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1.7);
+  }
 }
