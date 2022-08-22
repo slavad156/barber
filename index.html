@@ -19,27 +19,37 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-          <a class="logo" href="./index.html"
-            ><svg class="logo-img" width="66" height="56">
-              <use href="./images/sprites.svg#icon-Logo"></use></svg
-          ></a>
-          <ul class="header-list list">
-            <li class="header-item item"><a class="header-link link" href="#about">О нас</a></li>
-            <li class="header-item item">
-              <a class="header-link link" href="#price">Услуги и цены</a>
-            </li>
-            <li class="header-item item">
-              <a class="header-link link" href="#masters">Мастера</a>
-            </li>
-            <li class="header-item item">
-              <a class="header-link link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-          <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-btn btn" type="button" data-modal-open>онлайн-запись</button>
-        </nav>
+      <div class="container container-header">
+        <div class="thumb-header">
+          <div class="header-left">
+            <a class="logo" href="./index.html"
+              ><svg class="logo-img" width="66" height="56">
+                <use href="./images/sprites.svg#icon-Logo"></use></svg
+            ></a>
+
+            <nav class="header-nav">
+              <ul class="header-list list">
+                <li class="header-item item">
+                  <a class="header-link link" href="#about">О нас</a>
+                </li>
+                <li class="header-item item">
+                  <a class="header-link link" href="#price">Услуги и цены</a>
+                </li>
+                <li class="header-item item">
+                  <a class="header-link link" href="#masters">Мастера</a>
+                </li>
+                <li class="header-item item">
+                  <a class="header-link link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header-tel-btn">
+            <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="header-btn btn" type="button" data-modal-open>онлайн-запись</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -72,13 +82,12 @@
           <p class="hero-top-text top-text">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
           <p class="hero-bottom-text bottom-text">
-            Мы эксперты в модных мужских стрижках.<br />
-            Работаем быстро, осторожно и со вкусом.
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
           </p>
         </div>
       </div>
 
-      <section class="section-about">
+      <section class="section section-about">
         <div class="container about">
           <ul class="about-list list">
             <li class="about-item item">
@@ -151,24 +160,26 @@
       </section>
       <section class="section">
         <div class="container benefits">
-          <ul class="benefits-list list">
-            <li class="benefits-item item">
-              <p class="benefits-count">600</p>
-              <p class="benefits-text">Довольных клиентов в день</p>
-            </li>
-            <li class="benefits-item item">
-              <p class="benefits-count">50</p>
-              <p class="benefits-text">Наград за отличный сервис</p>
-            </li>
-            <li class="benefits-item item">
-              <p class="benefits-count">20</p>
-              <p class="benefits-text">Лучших мастеров Киева</p>
-            </li>
-            <li class="benefits-item item">
-              <p class="benefits-count">100</p>
-              <p class="benefits-text">Подарков постоянным клиентам</p>
-            </li>
-          </ul>
+          <div class="benefits-left">
+            <ul class="benefits-list list">
+              <li class="benefits-item item">
+                <p class="benefits-count">600</p>
+                <p class="benefits-text">Довольных клиентов в день</p>
+              </li>
+              <li class="benefits-item item">
+                <p class="benefits-count">50</p>
+                <p class="benefits-text">Наград за отличный сервис</p>
+              </li>
+              <li class="benefits-item item">
+                <p class="benefits-count">20</p>
+                <p class="benefits-text">Лучших мастеров Киева</p>
+              </li>
+              <li class="benefits-item item">
+                <p class="benefits-count">100</p>
+                <p class="benefits-text">Подарков постоянным клиентам</p>
+              </li>
+            </ul>
+          </div>
           <div class="benefits-right">
             <p class="benefits-top-text top-text">старая традиционная школа</p>
             <h2 class="benefits-title">Почему приходят именно к нам?</h2>
@@ -394,16 +405,21 @@
           <h2 class="visually-hidden">Галерея</h2>
           <ul class="gallery-list list">
             <li class="gallery-item item">
-              <img src="./images/gallery1.jpg" alt="стрижет затылок" width="270" />
+              <img
+                class="gallery-img"
+                src="./images/gallery1.jpg"
+                alt="стрижет затылок"
+                width="270"
+              />
             </li>
             <li class="gallery-item item">
-              <img src="./images/gallery2.jpg" alt="бреет бороду" width="270" />
+              <img class="gallery-img" src="./images/gallery2.jpg" alt="бреет бороду" width="270" />
             </li>
             <li class="gallery-item item">
-              <img src="./images/gallery3.jpg" alt="компресс" width="270" />
+              <img class="gallery-img" src="./images/gallery3.jpg" alt="компресс" width="270" />
             </li>
             <li class="gallery-item item">
-              <img src="./images/gallery4.jpg" alt="стрижет шею" width="270" />
+              <img class="gallery-img" src="./images/gallery4.jpg" alt="стрижет шею" width="270" />
             </li>
           </ul>
         </div>
@@ -423,7 +439,7 @@
                 />
               </div>
               <textarea name="message" placeholder="сообщение" class="online-text"></textarea>
-              <button class="btn" type="submit">отправить</button>
+              <button class="btn btn-form" type="submit">отправить</button>
             </form>
           </div>
 
@@ -449,9 +465,12 @@
                   >
                 </li>
               </ul>
+
+              <div class="work-time">
+                <p class="contacts-text top-text">время работы</p>
+                <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
+              </div>
             </address>
-            <p class="contacts-text top-text">время работы</p>
-            <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
           </div>
         </div>
       </section>
@@ -459,7 +478,6 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="footer-text">&copy;Copyright 2022</p>
         <ul class="footer-list list">
           <li class="footer-item item">
             <a
@@ -480,6 +498,8 @@
             >
           </li>
         </ul>
+
+        <p class="footer-text">&copy;Copyright 2022</p>
       </div>
     </footer>
 

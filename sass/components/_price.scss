@@ -29,22 +29,39 @@
 }
 
 .price-content {
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 50px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+  }
 }
 
 .price-list {
-  padding: 30px 40px;
-  margin-bottom: 50px;
+  padding: 30px;
+
+  margin-bottom: 20px;
 
   flex-grow: 1;
 
   &.left {
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    padding-bottom: 0;
   }
-
   &.right {
-    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    padding-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 30px 40px;
+    &.left {
+      padding-bottom: 30px;
+      background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    &.right {
+      padding-top: 30px;
+      background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
   }
 }
 
@@ -58,9 +75,14 @@
   }
 
   & .price-item-text {
-    font-size: 18px;
-    line-height: calc(30 / 18);
+    font-size: 14px;
+    line-height: calc(30 / 14);
     color: var(--light-text-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: calc(30 / 18);
+    }
   }
 }
 

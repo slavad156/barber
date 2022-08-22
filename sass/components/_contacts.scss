@@ -2,15 +2,29 @@
   background-color: #191c26;
   background-image: url('../images/contacts-bg.png');
   background-repeat: no-repeat;
-  background-position: right;
+
+  background-position: bottom;
   background-size: contain;
-  background-size: calc(50% - 15px);
-  margin: 0 auto;
+  // min-width: 448px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-position: right;
+    background-size: calc(50% - 15px);
+    margin: 0 auto;
+  }
 }
 
 .contacts-content {
-  width: calc(50% - 15px);
-  padding-left: 100px;
+  padding-top: 84px;
+
+  @media screen and (min-width: 1200px) {
+    width: calc(50% - 15px);
+    padding-left: 100px;
+  }
 }
 
 .contacts-title {
@@ -18,12 +32,36 @@
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   color: var(--white-color);
+  text-align: center;
 
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.contacts-address {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .contacts-list {
-  margin-bottom: 70px;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 70px;
+  }
 }
 
 .contacts-item:not(:last-child) {
@@ -72,6 +110,7 @@
 
 .contacts-text {
   font-weight: 600;
+  font-style: normal;
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
@@ -83,6 +122,7 @@
 
 .contacts-time {
   font-size: 18px;
+  font-style: normal;
   line-height: calc(30 / 18);
   color: var(--light-text-color);
 }

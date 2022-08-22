@@ -2,13 +2,19 @@
   background-color: var(--secondary-background-color);
 
   & .container {
-    display: flex;
-
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 44px;
+    padding-bottom: 44px;
 
     justify-content: space-between;
     align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+
+      padding-top: 55px;
+      padding-bottom: 55px;
+    }
   }
 }
 
@@ -22,6 +28,10 @@
 .footer-list {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-end;
+  }
 
   &::before {
     content: '';
