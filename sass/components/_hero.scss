@@ -1,14 +1,14 @@
 .hero {
   display: flex;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.2px) {
     width: 100%;
     padding: 0;
   }
 }
 
 .hero-soc {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.2px) {
     display: none;
   }
 

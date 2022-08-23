@@ -175,7 +175,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.2px) {
   .container-header {
     margin: 0;
     padding-left: 31px;
@@ -244,7 +244,7 @@ h2 {
   -webkit-transition: fill 300ms ease;
   transition: fill 300ms ease;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.2px) {
   .logo-img {
     fill: var(--white-color);
   }
@@ -253,16 +253,14 @@ h2 {
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 767.2px) {
   .header-list {
     display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -290,7 +288,7 @@ h2 {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.2px) {
   .header-tel-btn {
     display: none;
   }
@@ -367,7 +365,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.2px) {
   .hero {
     width: 100%;
     padding: 0;
@@ -385,7 +383,7 @@ h2 {
   -webkit-transform: translate(20px);
           transform: translate(20px);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.2px) {
   .hero-soc {
     display: none;
   }
@@ -1061,7 +1059,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.2px) {
   .gallery-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1425,12 +1423,15 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .footer-list {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .footer-list::before {

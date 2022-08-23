@@ -28,9 +28,9 @@
 .footer-list {
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 767px) {
-    justify-content: flex-end;
+  justify-content: flex-end;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
   }
 
   &::before {

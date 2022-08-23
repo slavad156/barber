@@ -11,7 +11,7 @@
 }
 
 .container-header {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.2px) {
     margin: 0;
     padding-left: 31px;
   }
@@ -57,7 +57,7 @@
 }
 
 .logo-img {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.2px) {
     fill: var(--white-color);
   }
 
@@ -70,13 +70,11 @@
 }
 
 .header-list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.2px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
+  display: flex;
 }
 
 .header-item:not(:last-child) {
@@ -105,7 +103,7 @@
 }
 
 .header-tel-btn {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.2px) {
     display: none;
   }
 
