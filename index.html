@@ -157,10 +157,30 @@
         <div class="container about">
           <ul class="about-list list">
             <li class="about-item item">
-              <img src="./images/about1.jpg" alt="бреет бороду" width="270" />
+              <picture>
+                <source
+                  srcset="./images/about-1.jpg 1x, ./images/about-1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/about-1-tab.jpg 1x, ./images/about-1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="./images/about-1.jpg" alt="бреет бороду" width="270" />
+              </picture>
             </li>
             <li class="about-item item">
-              <img src="./images/about2.jpg" alt="бреет шею" width="270" />
+              <picture>
+                <source
+                  srcset="./images/about-2.jpg 1x, ./images/about-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/about-2-tab.jpg 1x, ./images/about-2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="./images/about-2.jpg" alt="бреет шею" width="270" />
+              </picture>
             </li>
           </ul>
           <div class="about-content">
@@ -263,7 +283,22 @@
           <ul class="masters-list list">
             <li class="masters-item item">
               <div class="thumb">
-                <img class="masters-img" src="./images/master1.jpg" alt="стрижка шеи" width="370" />
+                <picture
+                  ><source
+                    srcset="./images/master-1.jpg 1x, ./images/master-1-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="./images/master-1-tab.jpg 1x, ./images/master-1-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="./images/master-1-mob.jpg 1x, ./images/master-1-mob-2x.jpg 2x"
+                    media="(max-width: 767.2px)" />
+                  <img
+                    class="masters-img"
+                    src="./images/master-1.jpg"
+                    alt="стрижка шеи"
+                    width="370"
+                /></picture>
                 <div class="overlay overlay-first">
                   <p class="overlay-text">BarberShop</p>
                   <p class="overlay-text">BarberShop</p>
@@ -329,12 +364,22 @@
 
             <li class="masters-item item">
               <div class="thumb">
-                <img
-                  class="masters-img"
-                  src="./images/master2.jpg"
-                  alt="стрижка сбоку"
-                  width="370"
-                />
+                <picture
+                  ><source
+                    srcset="./images/master-2.jpg 1x, ./images/master-2-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="./images/master-2-tab.jpg 1x, ./images/master-2-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="./images/master-2-mob.jpg 1x, ./images/master-2-mob-2x.jpg 2x"
+                    media="(max-width: 767.2px)" />
+                  <img
+                    class="masters-img"
+                    src="./images/master-2.jpg"
+                    alt="стрижка сбоку"
+                    width="370"
+                /></picture>
                 <div class="overlay overlay-second">
                   <p class="overlay-text">BarberShop</p>
                   <p class="overlay-text">BarberShop</p>
@@ -400,7 +445,18 @@
 
             <li class="masters-item item">
               <div class="thumb">
-                <img class="masters-img" src="./images/master3.jpg" alt="пробор" width="370" />
+                <picture
+                  ><source
+                    srcset="./images/master-3.jpg 1x, ./images/master-3-2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="./images/master-3-tab.jpg 1x, ./images/master-3-tab-2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="./images/master-3-mob.jpg 1x, ./images/master-3-mob-2x.jpg 2x"
+                    media="(max-width: 767.2px)" />
+                  <img class="masters-img" src="./images/master-3.jpg" alt="пробор" width="370"
+                /></picture>
                 <div class="overlay overlay-third">
                   <p class="overlay-text">BarberShop</p>
                   <p class="overlay-text">BarberShop</p>
@@ -471,21 +527,68 @@
           <h2 class="visually-hidden">Галерея</h2>
           <ul class="gallery-list list">
             <li class="gallery-item item">
-              <img
-                class="gallery-img"
-                src="./images/gallery1.jpg"
-                alt="стрижет затылок"
-                width="270"
-              />
+              <picture
+                ><source
+                  srcset="./images/gallery-1.jpg 1x, ./images/gallery-1-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/gallery-1-tab.jpg 1x, ./images/gallery-1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/gallery-1-mob.jpg 1x, ./images/gallery-1-mob-2x.jpg 2x"
+                  media="(max-width: 767.2px)" />
+                <img
+                  class="gallery-img"
+                  src="./images/gallery-1.jpg"
+                  alt="стрижет затылок"
+                  width="270"
+              /></picture>
             </li>
             <li class="gallery-item item">
-              <img class="gallery-img" src="./images/gallery2.jpg" alt="бреет бороду" width="270" />
+              <picture
+                ><source
+                  srcset="./images/gallery-2.jpg 1x, ./images/gallery-2-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/gallery-2-tab.jpg 1x, ./images/gallery-2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/gallery-2-mob.jpg 1x, ./images/gallery-2-mob-2x.jpg 2x"
+                  media="(max-width: 767.2px)" />
+                <img
+                  class="gallery-img"
+                  src="./images/gallery-2.jpg"
+                  alt="бреет бороду"
+                  width="270"
+              /></picture>
             </li>
             <li class="gallery-item item">
-              <img class="gallery-img" src="./images/gallery3.jpg" alt="компресс" width="270" />
+              <picture
+                ><source
+                  srcset="./images/gallery-3.jpg 1x, ./images/gallery-3-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/gallery-3-tab.jpg 1x, ./images/gallery-3-tab-2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/gallery-3-mob.jpg 1x, ./images/gallery-3-mob-2x.jpg 2x"
+                  media="(max-width: 767.2px)" />
+                <img class="gallery-img" src="./images/gallery-3.jpg" alt="компресс" width="270"
+              /></picture>
             </li>
             <li class="gallery-item item">
-              <img class="gallery-img" src="./images/gallery4.jpg" alt="стрижет шею" width="270" />
+              <picture
+                ><source
+                  srcset="./images/gallery-4.jpg 1x, ./images/gallery-4-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/gallery-4-tab.jpg 1x, ./images/gallery-4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/gallery-4-mob.jpg 1x, ./images/gallery-4-mob-2x.jpg 2x"
+                  media="(max-width: 767.2px)" />
+                <img class="gallery-img" src="./images/gallery-4.jpg" alt="стрижет шею" width="270"
+              /></picture>
             </li>
           </ul>
         </div>
