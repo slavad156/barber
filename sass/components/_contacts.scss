@@ -108,6 +108,37 @@
   }
 }
 
+.contacts-link,
+.contacts-link-mail,
+.contacts-link-tel {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-address,
+.icon-phone,
+.icon-mail {
+  stroke: var(--light-text-color);
+  margin-right: 16px;
+
+  transition: stroke 300ms ease;
+}
+
+.contacts-link:hover .icon-address,
+.contacts-link:focus .icon-address {
+  stroke: var(--accent-color);
+}
+
+.contacts-link-tel:hover .icon-phone,
+.contacts-link-tel:focus .icon-phone {
+  stroke: var(--accent-color);
+}
+
+.contacts-link-mail:hover .icon-mail,
+.contacts-link-mail:focus .icon-mail {
+  stroke: var(--accent-color);
+}
+
 .contacts-text {
   font-weight: 600;
   font-style: normal;

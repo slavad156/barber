@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-page>
     <header class="header">
       <div class="container container-header">
         <div class="thumb-header">
@@ -48,6 +48,72 @@
           <div class="header-tel-btn">
             <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
             <button class="header-btn btn" type="button" data-modal-open>онлайн-запись</button>
+          </div>
+        </div>
+
+        <button
+          class="btn-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="menu-open-btn" width="24" height="16">
+            <use href="./images/menu-sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- mob menu -->
+      <div class="backdrop-mob hidden">
+        <div class="mob-menu js-menu-container" id="mobile-menu">
+          <button class="btn-menu js-close-menu" type="button">
+            <svg class="menu-close-btn" width="19" height="19">
+              <use href="./images/menu-sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-content">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item item">
+                <a class="mob-menu-link link" href="#about">О нас</a>
+              </li>
+              <li class="mob-menu-item item">
+                <a class="mob-menu-link link" href="#price">Услуги и цены</a>
+              </li>
+              <li class="mob-menu-item item">
+                <a class="mob-menu-link link" href="#masters">Мастера</a>
+              </li>
+              <li class="mob-menu-item item">
+                <a class="mob-menu-link link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <div class="mob-menu-tel-btn">
+              <a class="mob-menu-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+              <button class="mob-menu-btn btn" type="button" data-modal-open-menu>
+                онлайн-запись
+              </button>
+            </div>
+            <div class="wrap-menu-soc">
+              <ul class="mob-menu-links-list list">
+                <li class="mob-menu-links-item item">
+                  <a
+                    class="link mob-menu-social"
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mob-menu-links-item item">
+                  <a
+                    class="link mob-menu-social"
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -109,7 +175,7 @@
               команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="about-btn btn" type="button">онлайн-запись</button>
+            <button class="about-btn btn" type="button" data-modal-open-about>онлайн-запись</button>
           </div>
         </div>
       </section>
@@ -155,7 +221,7 @@
               </li>
             </ul>
           </div>
-          <button class="price-btn btn" type="button">онлайн-запись</button>
+          <button class="price-btn btn" type="button" data-modal-open-price>онлайн-запись</button>
         </div>
       </section>
       <section class="section">
@@ -453,14 +519,24 @@
                     href="https://goo.gl/maps/4qSQcibgdhXannmP9"
                     target="_blank"
                     rel="noreferrer noopener nofollow"
-                    >ул. Васильковая, 7А Киев, 08132</a
+                  >
+                    <svg class="icon-address" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-map"></use>
+                    </svg>
+                    ул. Васильковая, 7А Киев, 08132</a
                   >
                 </li>
                 <li class="contacts-item item">
-                  <a class="contacts-link-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+                  <a class="contacts-link-tel link" href="tel:+380441111111"
+                    ><svg class="icon-phone" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-phone"></use></svg
+                    >+38 044 111 11 11</a
+                  >
                 </li>
                 <li class="contacts-item item">
                   <a class="contacts-link-mail link" href="mailto:barbershop@email.com"
+                    ><svg class="icon-mail" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-mail"></use></svg
                     >barbershop@email.com</a
                   >
                 </li>
@@ -533,5 +609,6 @@
 
     <script src="./js/form.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
