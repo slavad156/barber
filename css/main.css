@@ -33,6 +33,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1,
@@ -705,8 +707,15 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .about-list {
-    height: 100%;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin-right: 30px;
   }
 }
@@ -715,6 +724,10 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-right: 64px;
   }
 }
@@ -732,7 +745,14 @@ h2 {
 }
 @media screen and (min-width: 1200px) {
   .about-item:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.2px) {
+  .about-content {
+    max-width: 330px;
   }
 }
 
@@ -1468,7 +1488,7 @@ h2 {
   background-image: url("../images/contacts-bg-mob.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: contain;
+  background-size: 100% calc(50% - 15px);
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-contacts {
@@ -1489,7 +1509,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .section-contacts {
     background-position: right;
-    background-size: calc(50% - 15px);
+    background-size: calc(50% - 15px) 100%;
     margin: 0 auto;
     background-image: url("../images/contacts-bg.png");
   }
@@ -1546,6 +1566,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .contacts-list {
     margin-bottom: 0;
+    max-width: 260px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1602,6 +1623,19 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-address {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+}
+
+@media screen and (max-width: 767.2px) {
+  br {
+    display: none;
+  }
 }
 
 .icon-address,
@@ -1678,6 +1712,7 @@ h2 {
   font-size: 11px;
   line-height: 1.3636363636;
   color: var(--light-text-color);
+  letter-spacing: 0.2em;
 }
 
 .footer-list {
